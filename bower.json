@@ -1,0 +1,25 @@
+{
+  "name": "chatter",
+  "version": "0.0.0",
+  "authors": [
+    "Aaron Ortbals <aaron.ortbals@gmail.com>"
+  ],
+  "description": "Chatter - An Elixir + Phoenix chat app",
+  "keywords": [
+    "elixir",
+    "phoenix",
+    "chat"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/aortbals/chatter",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "~3.0.3"
+  }
+}

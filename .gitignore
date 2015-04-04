@@ -8,6 +8,7 @@ erl_crash.dump
 
 # Static artifacts
 /node_modules
+/bower_components
 
 # Since we are building js and css from web/static,
 # we ignore priv/static/{css,js}. You may want to
@@ -15,4 +16,5 @@ erl_crash.dump
 /priv/static/css
 /priv/static/js
 
-config/prod.secret.exs
+# Secrets
+/config/prod.secret.exs
