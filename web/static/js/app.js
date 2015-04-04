@@ -7,6 +7,9 @@ class App {
     var $messageInput = $('.js-Messages-input')
     var $usernameInput = $('.js-Messages-username-input')
 
+    var username = localStorage.getItem('username')
+    $usernameInput.val(username);
+
     socket.join("rooms:lobby", {}, chan => {
       $messageInput.off('keypress').on('keypress', e => {
         if (e.keyCode === 13) {
@@ -27,6 +30,10 @@ class App {
       chan.on("new:msg", msg => {
         $messages.append(this.messageTemplate(msg, $usernameInput.val()))
       })
+    })
+
+    $usernameInput.on('keyup', e => {
+      localStorage.setItem('username', $(e.target).val())
     })
   }
 
