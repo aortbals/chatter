@@ -1,0 +1,40 @@
+.Message {
+  margin-bottom: 10px;
+}
+
+.Message-inner-container {
+  display: inline-block;
+}
+
+.Message-body {
+  border-radius: 10px;
+  background-color: $baja-white;
+  padding: 10px;
+  display: inline-block;
+}
+
+.Message-from {
+  @extend %tiny-font-size;
+  color: $muted-text-color-desktop;
+  text-align: left;
+  margin-left: 10px;
+  margin-bottom: 2px;
+}
+
+.Message--me {
+  text-align: right;
+
+  .Message-body {
+    background-color: $malibu;
+  }
+}
+
+.Message--notification {
+  font-style: italic;
+  color: $muted-text-color-desktop;
+  padding: 5px;
+
+  .Message-body {
+    background: none;
+  }
+}

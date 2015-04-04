@@ -1,0 +1,48 @@
+/* Colors
+---------------*/
+
+$athens-gray: #ECF0F1;
+$light-gray: #A9A9A9;
+$very-light-gray: #E7E7E7;
+$malibu: #7ECEFD;
+$baja-white: #FFF8D3;
+
+/* Typography
+--------------*/
+
+$font-family: 'Helvetica Nueue', Helvetica;
+$font-family-mobile: $font-family;
+$font-weight: normal;
+$font-weight-mobile: normal;
+$text-color: #555;
+$muted-text-color-mobile: $light-gray;
+$muted-text-color-desktop: $light-gray;
+$light-text-color: $athens-gray;
+
+
+/* Font & Icon sizes
+---------------------*/
+
+$font-size-desktop: 16px;
+$font-size-mobile: 16px;
+$font-size-desktop-smaller: 14px;
+$font-size-mobile-smaller: 14px;
+$font-size-desktop-smallest: 13px;
+$font-size-mobile-smallest: 13px;
+$font-size-desktop-tiny: 11px;
+$font-size-mobile-tiny: 11px;
+$font-size-desktop-large: 18px;
+$font-size-mobile-large: 18px;
+$font-size-desktop-largest: 28px;
+$font-size-mobile-largest: 28px;
+
+
+/* Breakpoints
+---------------*/
+
+$mq-mobile-portrait   : 320px !default;
+$mq-mobile-iphone6    : 375px !default;
+$mq-mobile-landscape  : 568px !default;
+$mq-tablet-portrait   : 768px !default;
+$mq-tablet-landscape  : 1024px !default;
+$mq-desktop           : 1382px !default;

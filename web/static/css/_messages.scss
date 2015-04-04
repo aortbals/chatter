@@ -1,0 +1,35 @@
+.Messages {
+  padding: 20px;
+}
+
+.Messages-row--right {
+  text-align: right;
+}
+
+.Messages-input,
+.Messages-username-input {
+  border: 0;
+  outline: none;
+}
+
+.Messages-input {
+  width: 100%;
+  padding: 10px;
+  border-top: 1px solid $very-light-gray;
+}
+
+.Messages-bottom {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.Messages-username,
+.Messages-username-input {
+  @extend %tiny-font-size;
+}
+
+.Messages-username {
+  margin-left: 10px;
+  margin-bottom: 5px;
+}

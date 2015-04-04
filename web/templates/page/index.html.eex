@@ -1,0 +1,10 @@
+<div class='Chat'>
+  <div class="Messages js-Messages">
+  </div>
+  <div class="Messages-bottom">
+    <div class="Messages-username">Username: <input class='Messages-username-input js-Messages-username-input' type='text' placeholder='Enter a username' />
+    </div>
+    <input class='Messages-input js-Messages-input' type='text' placeholder='Enter a message' />
+  </div>
+</div>
+
