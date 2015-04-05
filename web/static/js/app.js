@@ -10,7 +10,7 @@ class App {
     var username = localStorage.getItem('username')
     $usernameInput.val(username);
 
-    socket.join("rooms:lobby", {}, chan => {
+    socket.join("rooms:lobby", { user: username }, chan => {
       $messageInput.off('keypress').on('keypress', e => {
         if (e.keyCode === 13) {
           chan.send("new:msg", {
@@ -25,6 +25,10 @@ class App {
         $messages.append(`<div class="Message Message--notification">
           You are now connected
         </div>`)
+      })
+
+      chan.on("user:entered", msg => {
+        $messages.append(this.joinedTemplate(msg))
       })
 
       chan.on("new:msg", msg => {
@@ -47,7 +51,7 @@ class App {
     let isMe = username === currentUsername
     let isMeClass = isMe ? 'Message--me' : '';
 
-    return (`
+    return `
       <div class="Message ${isMeClass}">
         <div class="Message-inner-container">
           <div class="Message-from">${username}</div>
@@ -56,7 +60,17 @@ class App {
           </div>
         </div>
       </div>
-    `)
+    `
+  }
+
+  static joinedTemplate(msg) {
+    let username = this.sanitize(msg.user || "anonymous")
+
+    return `
+      <div class="Message Message--notification">
+        ${username} joined
+      </div>
+    `
   }
 }
 

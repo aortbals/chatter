@@ -18,3 +18,5 @@ erl_crash.dump
 
 # Secrets
 /config/prod.secret.exs
+
+.DS_Store
