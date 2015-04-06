@@ -30,6 +30,4 @@ config :logger, :console, format: "[$level] $message\n"
 # Configure your database
 config :chatter, Chatter.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
   database: "chatter_dev"

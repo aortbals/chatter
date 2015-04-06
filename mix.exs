@@ -15,7 +15,7 @@ defmodule Chatter.Mixfile do
   # Type `mix help compile.app` for more information
   def application do
     [mod: {Chatter, []},
-     applications: [:phoenix, :cowboy, :logger]]
+     applications: [:phoenix, :cowboy, :logger, :ecto]]
   end
 
   # Specifies your project dependencies
